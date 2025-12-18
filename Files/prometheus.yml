@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s # Как часто собирать данные (каждые 5 сек)
+
+scrape_configs:
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080'] # Имя контейнера cAdvisor
